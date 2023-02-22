@@ -7,6 +7,7 @@ import shortenAddress from '@/lib/shortenAddress';
 import useIsMounted from '@/lib/useIsMounted';
 import useFetchEthPrice from '@/lib/useFetchEthPrice';
 import Web3 from 'web3';
+import PriceGraph from '@/components/Graph';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import {
@@ -375,8 +376,12 @@ scale={10}
 						</div>
 
 
-
-
+          
+                   
+						<div className="col-span-3 row-span-3 shadow-lg xl:col-span-3 card compact bg-base-100">
+							<h1 className="card-title text-blue-700"> BIT Price Graph</h1>
+				<PriceGraph/>
+                        </div>
 
 
 						<div className="col-span-1 row-span-3 shadow-lg xl:col-span-3 card compact bg-base-100">
